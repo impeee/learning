@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import LineChart from './LineChart';
+import LineChartAsync from './LineChartAsync';
 import BarChart from './BarChart';
 
 class App extends React.Component {
@@ -30,7 +30,7 @@ class App extends React.Component {
 
         {
           this.state.showCharts ?
-            <div><LineChart/><BarChart/></div>
+            <div><LineChartAsync /><BarChart /></div>
             : null
         }
       </div>
