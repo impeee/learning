@@ -1,3 +1,4 @@
 node_modules/
+1-react-advanced/1-webpack-chunks-lazy-loading/dist/
 *.swp
 *.swo
