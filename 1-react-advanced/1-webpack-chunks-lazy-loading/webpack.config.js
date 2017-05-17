@@ -1,4 +1,5 @@
-const path = require('path');
+const path = require('path'),
+      webpack = require('webpack');
 
 module.exports = {
   entry: './App.js',
@@ -10,5 +11,11 @@ module.exports = {
     loaders: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
     ]
-  }
+  },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin({
+      children: true,
+      async: true,
+    }),
+  ],
 }
